@@ -2,31 +2,25 @@
 <html lang="fr">
 <body>
 <pre class="mermaid">
----
-title: Animal example
----
 classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
+    Portfolio <|-- Page
+    Portfolio <|-- Projet
+    Portfolio <|-- CV
+    Portfolio : +int age
+    Portfolio : +String gender
+    Portfolio: +isMammal()
+    Portfolio: +mate()
+    class Page{
+        +String nom
+        +String contenu
     }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
+    class Projet{
+        +String nom
+        +String description
+        +String url
     }
-    class Zebra{
-        +bool is_wild
-        +run()
+    class CV{
+        +String fichier
     }
 </pre>
 <script type="module">
