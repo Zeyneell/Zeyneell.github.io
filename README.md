@@ -1,3 +1,2 @@
 # Zeyneell.github.io
-VENEZ SUR MON SITE SVP
 BONJOUR LE MONDE
