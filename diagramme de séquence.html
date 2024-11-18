@@ -3,9 +3,14 @@
 <body>
 <pre class="mermaid">
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
+    participant Utilisateur
+    participant ServeurGitHub
+    participant ServeurWebJekyll
+
+    Utilisateur->>ServeurWebJekyll: Demande page
+    ServeurWebJekyll->>ServeurGitHub: Récupère projets
+    ServeurGitHub->>ServeurWebJekyll: Envoie projets
+    ServeurWebJekyll->>Utilisateur: Affiche projets
 
 </pre>
 <script type="module">
