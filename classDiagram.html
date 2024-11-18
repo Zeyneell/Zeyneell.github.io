@@ -6,10 +6,9 @@ classDiagram
     Portfolio <|-- Page
     Portfolio <|-- Projet
     Portfolio <|-- CV
-    Portfolio : +int age
-    Portfolio : +String gender
-    Portfolio: +isMammal()
-    Portfolio: +mate()
+    Portfolio : +String titre
+    Portfolio : +String description
+    Portfolio : +String theme 
     class Page{
         +String nom
         +String contenu
