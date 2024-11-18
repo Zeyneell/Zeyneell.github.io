@@ -3,9 +3,9 @@
 <body>
 <pre class="mermaid">
 classDiagram
-    Portfolio <|-- Page
-    Portfolio <|-- Projet
-    Portfolio <|-- CV
+    Portfolio --|> Page
+    Portfolio --|> Projet
+    Portfolio --|> CV
     Portfolio : +String titre
     Portfolio : +String description
     Portfolio : +String theme 
